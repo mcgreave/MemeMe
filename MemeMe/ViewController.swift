@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var botMemeText: UITextField!
     @IBOutlet weak var shareButton: UIBarButtonItem!
     var memedImage: UIImage?
-    var meme: Meme?
+    var meme = Meme()
     
     let memeTextAttributes:[String: Any] = [
         NSAttributedStringKey.strokeColor.rawValue: UIColor.black,
@@ -39,18 +39,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
         view.drawHierarchy(in: self.view.frame, afterScreenUpdates: true)
-        let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        let memage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.isToolbarHidden = false
         
-        return memedImage
+        return memage
     }
     
     func saveMeme() {
         // Create the meme
-        let meme = Meme(topText: topMemeText.text!, botText: botMemeText.text!, originalImage: imagePickerView.image!, memedImage: memedImage)
+        _ = Meme(topText: topMemeText.text!, botText: botMemeText.text!, originalImage: imagePickerView.image!, memedImage: memedImage)
     }
     
     
@@ -91,9 +91,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func shareMeme(_ sender: Any) {
         // generate memed image
-        let memedImage = generateMemedImage()
-        let controller = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
-        present(controller, animated: true, completion: nil)
+        let memage = generateMemedImage()
+        memedImage = memage
+        let controller = UIActivityViewController(activityItems: [memage], applicationActivities: nil)
         controller.completionWithItemsHandler = {
             (activity, success, items, error) in
             if(success && error == nil){
@@ -104,6 +104,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 //log error
             }
         }
+        
+        present(controller, animated: true, completion: nil)
     }
     
     
