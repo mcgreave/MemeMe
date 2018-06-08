@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Tester
+//  MemeMe
 //
 //  Created by Steve Rogers on 5/21/18.
 //  Copyright © 2018 SteveRogers. All rights reserved.

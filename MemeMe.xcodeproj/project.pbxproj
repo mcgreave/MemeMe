@@ -12,7 +12,7 @@
 		ED860C0C20B32F8E00E51D3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED860C0A20B32F8E00E51D3E /* Main.storyboard */; };
 		ED860C0E20B32F9100E51D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED860C0D20B32F9100E51D3E /* Assets.xcassets */; };
 		ED860C1120B32F9100E51D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED860C0F20B32F9100E51D3E /* LaunchScreen.storyboard */; };
-		ED860C1C20B32F9100E51D3E /* TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED860C1B20B32F9100E51D3E /* TesterTests.swift */; };
+		ED860C1C20B32F9100E51D3E /* MemeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED860C1B20B32F9100E51D3E /* MemeMeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,15 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED860C0320B32F8E00E51D3E /* Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED860C0320B32F8E00E51D3E /* MemeMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED860C0620B32F8E00E51D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED860C0820B32F8E00E51D3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED860C0B20B32F8E00E51D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED860C0D20B32F9100E51D3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED860C1020B32F9100E51D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ED860C1220B32F9100E51D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED860C1720B32F9100E51D3E /* TesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED860C1B20B32F9100E51D3E /* TesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterTests.swift; sourceTree = "<group>"; };
+		ED860C1220B32F9100E51D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/srogers/Documents/development/MemeMe/MemeMe/Info.plist; sourceTree = "<absolute>"; };
+		ED860C1720B32F9100E51D3E /* MemeMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemeMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED860C1B20B32F9100E51D3E /* MemeMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMeTests.swift; sourceTree = "<group>"; };
 		ED860C1D20B32F9100E51D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,8 +59,8 @@
 		ED860BFA20B32F8E00E51D3E = {
 			isa = PBXGroup;
 			children = (
-				ED860C0520B32F8E00E51D3E /* Tester */,
-				ED860C1A20B32F9100E51D3E /* TesterTests */,
+				ED860C0520B32F8E00E51D3E /* MemeMe */,
+				ED860C1A20B32F9100E51D3E /* MemeMeTests */,
 				ED860C0420B32F8E00E51D3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +68,13 @@
 		ED860C0420B32F8E00E51D3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED860C0320B32F8E00E51D3E /* Tester.app */,
-				ED860C1720B32F9100E51D3E /* TesterTests.xctest */,
+				ED860C0320B32F8E00E51D3E /* MemeMe.app */,
+				ED860C1720B32F9100E51D3E /* MemeMeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED860C0520B32F8E00E51D3E /* Tester */ = {
+		ED860C0520B32F8E00E51D3E /* MemeMe */ = {
 			isa = PBXGroup;
 			children = (
 				ED860C0620B32F8E00E51D3E /* AppDelegate.swift */,
@@ -84,24 +84,24 @@
 				ED860C0F20B32F9100E51D3E /* LaunchScreen.storyboard */,
 				ED860C1220B32F9100E51D3E /* Info.plist */,
 			);
-			path = Tester;
+			path = MemeMe;
 			sourceTree = "<group>";
 		};
-		ED860C1A20B32F9100E51D3E /* TesterTests */ = {
+		ED860C1A20B32F9100E51D3E /* MemeMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED860C1B20B32F9100E51D3E /* TesterTests.swift */,
+				ED860C1B20B32F9100E51D3E /* MemeMeTests.swift */,
 				ED860C1D20B32F9100E51D3E /* Info.plist */,
 			);
-			path = TesterTests;
+			path = MemeMeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED860C0220B32F8E00E51D3E /* Tester */ = {
+		ED860C0220B32F8E00E51D3E /* MemeMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED860C2020B32F9100E51D3E /* Build configuration list for PBXNativeTarget "Tester" */;
+			buildConfigurationList = ED860C2020B32F9100E51D3E /* Build configuration list for PBXNativeTarget "MemeMe" */;
 			buildPhases = (
 				ED860BFF20B32F8E00E51D3E /* Sources */,
 				ED860C0020B32F8E00E51D3E /* Frameworks */,
@@ -111,14 +111,14 @@
 			);
 			dependencies = (
 			);
-			name = Tester;
+			name = MemeMe;
 			productName = Tester;
-			productReference = ED860C0320B32F8E00E51D3E /* Tester.app */;
+			productReference = ED860C0320B32F8E00E51D3E /* MemeMe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ED860C1620B32F9100E51D3E /* TesterTests */ = {
+		ED860C1620B32F9100E51D3E /* MemeMeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED860C2320B32F9100E51D3E /* Build configuration list for PBXNativeTarget "TesterTests" */;
+			buildConfigurationList = ED860C2320B32F9100E51D3E /* Build configuration list for PBXNativeTarget "MemeMeTests" */;
 			buildPhases = (
 				ED860C1320B32F9100E51D3E /* Sources */,
 				ED860C1420B32F9100E51D3E /* Frameworks */,
@@ -129,9 +129,9 @@
 			dependencies = (
 				ED860C1920B32F9100E51D3E /* PBXTargetDependency */,
 			);
-			name = TesterTests;
+			name = MemeMeTests;
 			productName = TesterTests;
-			productReference = ED860C1720B32F9100E51D3E /* TesterTests.xctest */;
+			productReference = ED860C1720B32F9100E51D3E /* MemeMeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED860BFE20B32F8E00E51D3E /* Build configuration list for PBXProject "Tester" */;
+			buildConfigurationList = ED860BFE20B32F8E00E51D3E /* Build configuration list for PBXProject "MemeMe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,8 +166,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED860C0220B32F8E00E51D3E /* Tester */,
-				ED860C1620B32F9100E51D3E /* TesterTests */,
+				ED860C0220B32F8E00E51D3E /* MemeMe */,
+				ED860C1620B32F9100E51D3E /* MemeMeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED860C1C20B32F9100E51D3E /* TesterTests.swift in Sources */,
+				ED860C1C20B32F9100E51D3E /* MemeMeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 /* Begin PBXTargetDependency section */
 		ED860C1920B32F9100E51D3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ED860C0220B32F8E00E51D3E /* Tester */;
+			target = ED860C0220B32F8E00E51D3E /* MemeMe */;
 			targetProxy = ED860C1820B32F9100E51D3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -359,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tester/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MemeMe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,7 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Tester/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MemeMe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tester.app/Tester";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemeMe.app/MemeMe";
 			};
 			name = Debug;
 		};
@@ -424,14 +424,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tester.app/Tester";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemeMe.app/MemeMe";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED860BFE20B32F8E00E51D3E /* Build configuration list for PBXProject "Tester" */ = {
+		ED860BFE20B32F8E00E51D3E /* Build configuration list for PBXProject "MemeMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED860C1E20B32F9100E51D3E /* Debug */,
@@ -440,7 +440,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED860C2020B32F9100E51D3E /* Build configuration list for PBXNativeTarget "Tester" */ = {
+		ED860C2020B32F9100E51D3E /* Build configuration list for PBXNativeTarget "MemeMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED860C2120B32F9100E51D3E /* Debug */,
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED860C2320B32F9100E51D3E /* Build configuration list for PBXNativeTarget "TesterTests" */ = {
+		ED860C2320B32F9100E51D3E /* Build configuration list for PBXNativeTarget "MemeMeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED860C2420B32F9100E51D3E /* Debug */,

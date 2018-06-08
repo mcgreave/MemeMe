@@ -1,15 +1,15 @@
 //
-//  TesterTests.swift
-//  TesterTests
+//  MemeMeTests.swift
+//  MemeMe
 //
 //  Created by Steve Rogers on 5/21/18.
 //  Copyright © 2018 SteveRogers. All rights reserved.
 //
 
 import XCTest
-@testable import Tester
+@testable import MemeMe
 
-class TesterTests: XCTestCase {
+class MemeMeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
