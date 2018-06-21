@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,21 +42,8 @@
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="EWx-CB-ufO"/>
                                 </items>
                             </toolbar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WY-sg-3nm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="76w-Iv-DGl"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem systemItem="action" id="9hI-2h-F5d">
-                                        <connections>
-                                            <action selector="shareMeme:" destination="BYZ-38-t0r" id="a1A-lo-PZD"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Eu-fC-tig">
-                                <rect key="frame" x="50" y="94" width="275" height="30"/>
+                                <rect key="frame" x="50" y="114" width="275" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UHR-TB-gQM"/>
                                 </constraints>
@@ -73,11 +60,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="alphabet"/>
                             </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WY-sg-3nm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="76w-Iv-DGl"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="action" id="9hI-2h-F5d">
+                                        <connections>
+                                            <action selector="shareMeme:" destination="BYZ-38-t0r" id="a1A-lo-PZD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8WY-sg-3nm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Ub-Po-LuR"/>
-                            <constraint firstItem="8WY-sg-3nm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4tZ-mo-g6F"/>
+                            <constraint firstItem="8WY-sg-3nm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4tZ-mo-g6F"/>
                             <constraint firstItem="l0k-aY-DPJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GL8-mu-Ngz"/>
                             <constraint firstItem="B5z-i4-U4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="KFD-D0-qGJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B5z-i4-U4E" secondAttribute="trailing" constant="50" id="L7H-P0-sEl"/>
