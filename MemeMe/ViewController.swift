@@ -15,6 +15,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var topMemeText: UITextField!
     @IBOutlet weak var botMemeText: UITextField!
     @IBOutlet weak var shareButton: UIBarButtonItem!
+    @IBOutlet weak var navBar: UIToolbar!
+    @IBOutlet weak var toolBar: UIToolbar!
+    
+    
+    
     var memedImage: UIImage?
     var meme = Meme()
     
@@ -33,8 +38,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func generateMemedImage() -> UIImage {
         
-        self.navigationController?.isNavigationBarHidden = true
-        self.navigationController?.isToolbarHidden = true
+        self.navBar.isHidden = true
+        self.toolBar.isHidden = true
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -42,8 +47,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let memage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationController?.isToolbarHidden = false
+        self.navBar.isHidden = false
+        self.toolBar.isHidden = false
         
         return memage
     }
@@ -56,12 +61,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.topMemeText.delegate = self
-        self.botMemeText.delegate = self
-        topMemeText.defaultTextAttributes = memeTextAttributes
-        botMemeText.defaultTextAttributes = memeTextAttributes
-        topMemeText.textAlignment = .center
-        botMemeText.textAlignment = .center
+        configureText(textField: topMemeText, withText: topMemeText.text!)
+        configureText(textField: botMemeText, withText: botMemeText.text!)
+    }
+    
+    func configureText(textField: UITextField, withText: String) {
+        textField.delegate = self
+        textField.defaultTextAttributes = memeTextAttributes
+        textField.textAlignment = .center
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -76,16 +84,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func pickAnImage(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
-        present(imagePicker, animated: true, completion: nil)
+        presentImagePickerWith(sourceType: .photoLibrary)
     }
     
     @IBAction func pickAnImageFromCamera(_ sender: Any) {
+        presentImagePickerWith(sourceType: .camera)
+    }
+    
+    func presentImagePickerWith(sourceType: UIImagePickerControllerSourceType) {
         let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = sourceType
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
     }
     

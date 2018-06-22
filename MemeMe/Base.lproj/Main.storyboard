@@ -101,7 +101,9 @@
                         <outlet property="botMemeText" destination="B5z-i4-U4E" id="0SZ-gJ-EmV"/>
                         <outlet property="cameraButton" destination="bel-wi-Y8s" id="B2h-wo-y6b"/>
                         <outlet property="imagePickerView" destination="wcC-To-hxk" id="NJU-sY-zXj"/>
+                        <outlet property="navBar" destination="8WY-sg-3nm" id="bIm-da-NG1"/>
                         <outlet property="shareButton" destination="9hI-2h-F5d" id="jSF-Ah-YT5"/>
+                        <outlet property="toolBar" destination="l0k-aY-DPJ" id="EbG-wu-cjj"/>
                         <outlet property="topMemeText" destination="2Eu-fC-tig" id="wlC-CH-618"/>
                     </connections>
                 </viewController>
